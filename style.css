@@ -38,6 +38,7 @@
   src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)
     format("woff2");
 }
+
 .tax {
   width: 100vw;
   height: 53px;
@@ -107,7 +108,7 @@
   list-style: none;
   text-align: center;
   padding: 0 8px;
-  flex: 2 0 60%;
+  flex: 2 0 50%;
   display: flex;
   justify-content: center;
 }
@@ -147,7 +148,7 @@
   position: relative;
 
   height: 100vh;
-
+  width: 100vw;
   /* Will not allow the video to overflow the 
   container */
   overflow: hidden;
@@ -163,8 +164,8 @@
 video {
   /** Simulationg background-size: cover */
   object-fit: cover;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 
   position: absolute;
   top: 0;
@@ -286,6 +287,12 @@ button {
   color: #171a20;
 }
 .bottom-txt {
+  font-family: Gotham SSm;
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+  font-size: 12px;
+
   position: absolute;
   top: 97vh;
   color: #fff;
@@ -297,10 +304,7 @@ button {
   color: #fff;
   font-weight: bold;
 }
-.container1 {
-  background-color: gold;
-  height: 100vh;
-}
+
 .safety-container {
   font-family: Gotham SSm;
   font-weight: 500;
@@ -311,29 +315,31 @@ button {
   color: #171a20;
   position: relative;
   width: 100vw;
+  height: 100vh;
 }
 #safety {
   position: relative;
-  left: 25vw;
   font-size: 28px;
   color: #171a20;
+  margin-left: 25vw;
 }
 
 .safety-container p {
   font-size: 14px;
   font-weight: 300;
   position: relative;
-  left: 25vw;
+
+  margin-left: 25vw;
 }
 .safety-container a {
   color: #171a20;
 }
 
 .features {
- 
-  
-  width: 100vw;
-  height: 10vh;
+  position: absolute;
+
+  margin-left: 25vw;
+  width: 50vw;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -346,28 +352,52 @@ button {
   src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)
     format("woff2");
   color: #171a20;
-  
 }
 .feature1 {
-  
- 
- padding: 0 20px;
- text-align: center;
+  text-align: left;
+  padding-right: 20px;
 }
 
 .feature2 {
-  
-  padding: 0 20px;
- text-align: center;
-  
+  text-align: left;
+}
+.flexbox {
+  background: url(./img/Model-3-Range-Hero-Desktop-NA.avif) no-repeat center
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-family: Gotham SSm;
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)
+    format("woff2");
+  font-size: 24px;
+}
+.flexbox p {
+  font-size: 12px;
 }
 
-
-.container2 {
-  background-color: green;
-  height: 100vh;
+.item1 {
+  height: 33.3vh;
+  margin-left: 2vw;
+  margin-top: 25vh;
 }
-.container3 {
-  background-color: blue;
-  height: 100vh;
+
+.item2 {
+  height: 33.3vh;
+  margin-left: 2vw;
+}
+.item3 {
+  height: 33.3vh;
+  margin-left: 2vw;
+  margin-bottom: 20vh;
+}
+
+.goanywhere{
+  text-align: center;
 }
