@@ -42,12 +42,8 @@
 .tax {
   width: 100vw;
   height: 53px;
-  background: rgb(57, 71, 108);
-  background: linear-gradient(
-    90deg,
-    rgba(57, 71, 108, 1) 0%,
-    rgba(20, 20, 20, 1) 100%
-  );
+  background: rgb(57,71,108);
+  background: linear-gradient(90deg, rgba(57,71,108,1) 0%, rgba(20,20,20,1) 100%); 
   position: fixed;
   text-align: center;
   z-index: 2;
@@ -217,7 +213,7 @@ video {
 
 .bottom-container {
   position: absolute;
-  top: 87vh;
+  top: 85vh;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -297,9 +293,10 @@ button {
   font-display: swap;
   font-style: normal;
   font-size: 12px;
-
+  src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)
+  format("woff2");
   position: absolute;
-  top: 97vh;
+  top: 95vh;
   color: #fff;
 }
 .bottom-txt a {
@@ -358,6 +355,7 @@ button {
     format("woff2");
   color: #171a20;
   line-height: 1.5em;
+  
 }
 .feature1 {
   text-align: left;
@@ -404,7 +402,7 @@ button {
   margin-bottom: 20vh;
 }
 
-.goanywhere {
+.goanywhere{
   text-align: left;
   display: flex;
   flex-direction: row;
@@ -420,6 +418,7 @@ button {
   font-style: normal;
   src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)
     format("woff2");
+  
 }
 .tag1 {
   width: 500px;
@@ -428,18 +427,20 @@ button {
 }
 .goanywhere span {
   font-size: 28px;
+
 }
-.goanywhere button {
+.goanywhere button{
   color: #171a20;
   background-color: #fff;
   width: 204px;
   height: 40px;
   border: 3px solid #171a20;
 }
-.goanywhere button:hover {
+.goanywhere button:hover{
   color: #fff;
   background-color: #171a20;
   cursor: pointer;
+
 }
 .tag2 {
   height: 300px;
